@@ -8,7 +8,7 @@ export default async (patterns, targetPath, options?, successCallback?, errorCal
     const newTargetPath = replacePathSplit(path.resolve(targetPath))
     await fs.ensureDir(newTargetPath)
 
-    const filePaths = await globby([].concat(patterns || '**/*'), { ...options, absolute: false })
+    const filePaths = await globby([].concat(patterns || '**/*'), { dot: true, ...options, absolute: false })
     if (!targetPath) return
     const promises = filePaths.map(async (filePath, i) => {
         try {
