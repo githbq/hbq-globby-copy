@@ -14,17 +14,18 @@ npm install globby-copy-promise
 
 ## 使用   
 
-``` 
-await copy(['**/*.js','!**/node_modeuls/**/*'], '/home/temp')
+``` js
+import copy from 'globby-copy-promise'
+// in async method
+await copy(['**/*.js', '!**/node_modeuls/**/*'], '/home/temp')
 ```
 
 ## cli模式
 
-``` js
-npm i - g globby - copy - promise
+``` shell
+npm i -g globby-copy-promise
 
-globby - copy '**/*.js'
-'!**/node_modeuls/**/*' - d = '/home/temp'
+globby-copy '**/*.js' '!**/node_modeuls/**/*' -d='/home/temp'
 ```
 
  
