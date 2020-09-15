@@ -15,9 +15,9 @@ export default async (patterns, targetPath, options?, successCallback?, errorCal
             await fs.copy(filePath, path.resolve(newTargetPath, filePath))
             successCallback && successCallback(filePath, i)
         } catch (e) {
-            errorCallback && errorCallback(e, i)
+            errorCallback && errorCallback(e, filePath, i)
         }
     })
-    return await Promise.all(promises)
+    return Promise.all(promises)
 }
 
