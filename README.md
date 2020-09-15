@@ -1,28 +1,30 @@
-# module-cli-lib
+# globby-copy-promise
 
 ## 功能介绍
 
-1. module-cli-lib
+1. globby-copy-promise
 
 ## 安装
 
 ``` 
-yarn add module-cli-lib 
+yarn add globby-copy-promise 
 //or 
-npm install module-cli-lib 
+npm install globby-copy-promise 
 ```
 
 ## 使用   
 
 ``` 
+await copy(['**/*.js','!**/node_modeuls/**/*'], '/home/temp')
 ```
 
 ## cli模式
 
+``` js
+npm i - g globby - copy - promise
+
+globby - copy '**/*.js'
+'!**/node_modeuls/**/*' - d = '/home/temp'
 ```
 
-npm i -g module-cli-lib
-
-module-cli-lib start
-```
  

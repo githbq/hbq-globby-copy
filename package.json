@@ -1,11 +1,9 @@
 {
-    "name": "module-cli-lib",
+    "name": "globby-copy-promise",
     "version": "1.0.0",
-    "description": "module-cli-lib",
+    "description": "globby-copy-promise",
     "main": "build/index.js",
-    "bin": {
-        "module-cli-lib": "./build/bin"
-    },
+    "bin": {"globby-copy": "./build/bin"},
     "scripts": {
         "start:build": "npm run tsc && node build",
         "start": "node run",
@@ -17,6 +15,8 @@
         "lint": "tslint \"src/**/*.ts\" --fix"
     },
     "dependencies": {
+        "fs-extra": "^9.0.1",
+        "globby": "^11.0.1",
         "tslib": "^1.13.0",
         "yargs": "^15.4.1"
     },
@@ -32,12 +32,11 @@
         "typescript": "^3.9.7"
     },
     "keywords": [
-        "module-cli-lib"
+        "globby-copy",
+        "globby-copy-promise"
     ],
     "author": "hubiqing",
-    "repository": "https://github.com/githbq/hbq-module-cli-lib-boilerplate.git",
-    "engines": {
-        "node": ">=8"
-    },
+    "repository": "https://github.com/githbq/hbq-globby-copy.git",
+    "engines": {"node": ">=8"},
     "license": "MIT"
 }
