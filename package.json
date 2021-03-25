@@ -1,6 +1,6 @@
 {
     "name": "globby-copy-promise",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "globby-copy-promise",
     "main": "build/index.js",
     "bin": {"globby-copy": "./build/bin/index.js"},
