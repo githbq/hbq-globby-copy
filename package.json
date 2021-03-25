@@ -3,7 +3,7 @@
     "version": "1.0.4",
     "description": "globby-copy-promise",
     "main": "build/index.js",
-    "bin": {"globby-copy": "./build/bin"},
+    "bin": {"globby-copy": "./build/bin/index.js"},
     "scripts": {
         "start:build": "npm run tsc && node build",
         "start": "node run",
