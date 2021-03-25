@@ -14,7 +14,7 @@ export default async (patterns, targetPath, options?, successCallback?, errorCal
     if (!targetPath) return
     const promises = filePaths.map(async (filePath, i) => {
         try {
-            await fs.copy(filePath, path.join(newTargetPath, filePath))
+            await fs.copy(path.join(options.cwd, filePath), path.join(newTargetPath, filePath))
             successCallback && successCallback(filePath, i)
         } catch (e) {
             errorCallback && errorCallback(e, filePath, i)
